@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your image</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/index" method="POST">
+        <div class="image-container">
+            <label for="futa">
+                <img src="static/images/futa.jpg">
+            </label>
+            <input type="radio" id="futa" name="chosen_image" value="futa">
+        </div>
+        <div class="image-container">
+            <label for="sho">
+                <img src="static/images/sho.jpg">
+            </label>
+            <input type="radio" id="sho" name="chosen_image" value="sho">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
