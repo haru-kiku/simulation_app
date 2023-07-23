@@ -18,15 +18,16 @@
 <body>
     <div class="image-container">
         <img src="static/images/{{ photo }}">
-        <form action="/index_2" method="POST">
+        <!-- <img src="static/images/{{ photo1 }}"> -->
+        <form action="/index_5" method="POST">
             <div class="choice-container">
                 <label for="meal">
-                    <input type="radio" id="meal" name="chosen_preference" value="食事">
-                    食事
+                    <input type="radio" id="meal" name="chosen_preference" value="金鶏山">
+                    金鶏山
                 </label>
                 <label for="photo">
-                    <input type="radio" id="photo" name="chosen_preference" value="写真">
-                    写真
+                    <input type="radio" id="photo" name="chosen_preference" value="無量光院跡">
+                    無量光院跡
                 </label>
                 <input type="hidden" id="photo" name="chosen_image" value={{photo}}>
                 <button type="submit">Submit</button>

@@ -2,15 +2,50 @@
 .image-container {
     position: relative;
     display: inline-block;
+    display: flex;
+}
+
+.image-container h2 {
+    text-align: center;
+}
+
+.image-container h3 {
+    text-align: center;
 }
 
 /* 選択肢のスタイル */
 .choice-container {
     position: absolute;
-    top: 10px; /* 選択肢の上端の位置 */
-    left: 10px; /* 選択肢の左端の位置 */
-    background-color: rgba(255, 255, 255, 0.8); /* 背景の透明度を設定 */
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 5px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-family: 3;
+    width: 30%;
 }
+
+
+button {
+    width: 100px;
+    font-size: 20px;
+    height: 70px;
+}
+
+.container{
+width:120px;
+height: 100px;
+}
+
+.image-half{
+float: left;
+width: 80%;
+height: 100px;
+box-sizing: border-box;
+}
+
+.image-half img{
+width: 100%;
+height: 200px;
+}
+

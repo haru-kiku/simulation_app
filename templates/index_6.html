@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     <title>Choose your preference</title>
     <style>
         .choice-container {
@@ -12,10 +14,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="image-container">
-    <img src="../static/images/{{ photo }}">
-    <form action="/select" method="POST">
+    <img src="/static/images/{{ photo }}">
+    <form action="index_7.html" method="POST">
         <div class="choice-container">
             <label for="shopping">
                 <input type="radio" id="shopping" name="chosen_preference" value="{{choice_1}}">
@@ -25,7 +28,8 @@
                 <input type="radio" id="experience" name="chosen_preference" value="{{choice_2}}">
                 {{choice_2}}
             </label>
-            <input type="hidden" id="photo" name="photo" value={{photo}}>
+            <!-- <input type="hidden" id="photo" name="chosen_preference" value={{photo}}> -->
+            <input type="hidden" id="photo" name="chosen_image" value={{photo}}>
         <button type="submit">Submit</button>
         </div>
     </form>
